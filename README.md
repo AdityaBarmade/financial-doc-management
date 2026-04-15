@@ -108,23 +108,8 @@ Open **http://localhost:8000/docs** for the interactive Swagger documentation.
 
 ---
 
-### Option 2: Docker Compose (Recommended)
 
-```bash
-# 1. Copy env file
-copy .env.example .env
 
-# 2. Set your SECRET_KEY in .env
-
-# 3. Start all services
-docker compose up -d
-
-# 4. Check logs
-docker compose logs -f api
-
-# 5. Seed sample data (inside container)
-docker compose exec api python scripts/seed_sample_data.py
-```
 
 Services started:
 - **API**: http://localhost:8000 — Swagger docs at /docs
@@ -179,16 +164,11 @@ financial-doc-management/
 │   │   └── rag.py                 # /rag endpoints
 │   └── utils/
 │       └── file_utils.py          # File handling helpers
-├── alembic/                        # Database migrations
 ├── tests/                          # Pytest tests
 ├── scripts/
 │   └── seed_sample_data.py        # Sample data seeder
-├── Dockerfile                      # Multi-stage production image
-├── docker-compose.yml              # Full stack deployment
 ├── requirements.txt
-├── .env.example
-├── alembic.ini
-└── pytest.ini
+
 ```
 
 ---
