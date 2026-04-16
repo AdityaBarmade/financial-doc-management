@@ -168,6 +168,8 @@ financial-doc-management/
 ├── scripts/
 │   └── seed_sample_data.py        # Sample data seeder
 ├── requirements.txt
+├── screenshots                    #outputs
+
 
 ```
 
